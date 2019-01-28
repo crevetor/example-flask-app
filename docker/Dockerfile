@@ -4,5 +4,5 @@ RUN pip install pipenv --upgrade
 ADD Pipfile* /app/
 RUN pipenv install --system
 
-ADD uwsgi.ini /app
+ADD docker/uwsgi.ini /app
 COPY ./src /app
